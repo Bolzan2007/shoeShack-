@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link para a fonte Jockey One do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <div class="navbar">
+        <a href="index.html" class="brand-title">Shoe Shack</a>
+    </div>
+    <!-- Conteúdo da página de checkout -->
+    <div class="checkout-container">
+        <h1>Finalizar Compra</h1>
+        <form id="checkout-form">
+            <label for="name">Nome Completo</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="address">Endereço</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <button type="submit" class="buy-button">Confirmar Compra</button>
+        </form>
+        <p class="delivery-estimate">Estimativa de entrega: 30 dias</p>
+    </div>
+</body>
+</html>

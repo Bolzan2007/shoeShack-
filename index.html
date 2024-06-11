@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Shack</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="about.html" class="brand-title">Shoe Shack</a>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Pesquisar...">
+            <img src="file (1) 1.png" alt="Icon" class="nav-icon" onclick="toggleCart()">
+        </div>
+    </div>
+    <div class="background-image"></div>
+    <div class="circle-container">
+        <div class="circle">
+            <a href="#tenis"><img src="image 7.png" alt="Sneakers"></a>
+            <div class="circle-text">Sneakers</div>
+        </div>
+        <div class="circle">
+            <a href="#palmilha"><img src="image 6.png" alt="Insoles"></a>
+            <div class="circle-text">Insoles</div>
+        </div>
+        <div class="circle">
+           <a href="#meia"> <img src="fotor-ai-20240502155754 1.png" alt="Socks"></a>
+            <div class="circle-text">Socks</div>
+        </div>
+
+    </div>
+    <div class="align_nav_block">
+        <div class="block_nav">
+          <p>Tênis</p>
+        </div>
+    </div>
+
+    <!-- Primeira parte = tenis  -->
+    <div class="products-container">
+        <div class="product" id="tenis">
+            <img src="image 3.png" alt="Product 1">
+            <div class="product-description" data-id="1" data-name="TurboIImpulse 1 Nike x ShoeShack"
+                data-price="99.90">
+                <h3>TurboIImpulse 1 Nike x ShoeShack
+                </h3>
+                <p>White Black</p>
+                <p class="additional-info">Informação adicional sobre o Produto 1.</p>
+                <p class="price">R$ 359,90</p>
+                <button class="buy-button" onclick="addToCart(1)">Comprar</button>
+            </div>
+        </div>
+        <div class="product reverse">
+            <img src="image 4.png" alt="Product 2">
+            <div class="product-description" data-id="2" data-name="HighJump2 Nike x ShoeShack" data-price="149.90">
+                <h3>HighJump2 Nike x ShoeShack
+                </h3>
+                <p>Black</p>
+                <p class="additional-info">Informação adicional sobre o Produto 2.</p>
+                <p class="price">R$ 499,90</p>
+                <button class="buy-button" onclick="addToCart(2)">Comprar</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="image 1.png" alt="Product 3">
+            <div class="product-description" data-id="3" data-name="SprintSolar1 Nike x ShoeShack" data-price="199.90">
+                <h3>SprintSolar1 Nike x ShoeShack</h3>
+                <p>Orange Blue</p>
+                <p class="additional-info">Informação adicional sobre o Produto 3.</p>
+                <p class="price">R$ 1199,90</p>
+                <button class="buy-button" onclick="addToCart(3)">Comprar</button>
+            </div>
+        </div>
+    </div>
+    <!-- Final primeira parte = tenis -->
+
+    <!-- Carrinho de Compras -->
+<div id="cart" class="cart">
+    <h2>Carrinho de Compras</h2>
+    <div id="cart-items"></div>
+    <p id="empty-cart-message">Seu carrinho está vazio.</p>
+    <!-- Botão para outra página -->
+    <a href="checkout.html" class="checkout-button">Finalizar Compra</a>
+</div>
+
+
+    <!-- Segunda parte = palmilhas  -->
+
+    <div class="align_nav_block">
+        <div class="block_nav">
+            <p>Palmilha</p>
+        </div>
+    </div>
+    <div class="products-container">
+        <div class="product" id="palmilha">
+
+            <img src="./assets/imagems.palmilha.1.jpg" alt="Product 1">
+            <div class="product-description" data-id="1" data-name="TurboIImpulse 1 Nike x ShoeShack"
+                data-price="99.90">
+                <h3>VelocityVortex 1.0 Super Velocity
+                </h3>
+                <p>Blue Red White </p>
+                <p class="additional-info">Informação adicional sobre o Produto 4.</p>
+                <p class="price">R$ 69,99</p>
+                <button class="buy-button" onclick="addToCart(1)">Comprar</button>
+            </div>
+        </div>
+        <div class="product reverse">
+            <img src="./assets/imagens.palmilha.2.png   " alt="Product 2">
+            <div class="product-description" data-id="2" data-name="HighJump2 Nike x ShoeShack" data-price="149.90">
+                <h3>SpeedForce Sneakers Best Super Jump
+                </h3>
+                <p>Green and Red</p>
+                <p class="additional-info">Informação adicional sobre o Produto 5.</p>
+                <p class="price">R$ 99,99</p>
+                <button class="buy-button" onclick="addToCart(2)">Comprar</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./assets/Imagem.palmilha.3.png" alt="Product 3">
+            <div class="product-description" data-id="3" data-name="SprintSolar1 Nike x ShoeShack" data-price="199.90">
+                <h3>HyperHustle Espectro Teleport</h3>
+                <p>Blue and White</p>
+                <p class="additional-info">Informação adicional sobre o Produto 6.</p>
+                <p class="price">R$ 129,99</p>
+                <button class="buy-button" onclick="addToCart(3)">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terceira parte = Meias -->
+    <div class="align_nav_block">
+        <div class="block_nav">
+            <p>Meia</p>
+        </div>
+    </div>
+    <div class="products-container">
+        <div class="product" id="meia">
+
+            <img src="./assets/meia 1.png" alt="Product 1">
+            <div class="product-description" data-id="1" data-name="TurboIImpulse 1 Nike x ShoeShack"
+                data-price="99.90">
+                <h3>Adereo Socks x Aderencia extrema</h3>
+                <p>White </p>
+                <p class="additional-info">Informação adicional sobre o Produto 7.</p>
+                <p class="price">R$ 89,99</p>
+                <button class="buy-button" onclick="addToCart(1)">Comprar</button>
+            </div>
+        </div>
+        <div class="product reverse">
+            <img src="./assets/meia 2.png" alt="Product 2">
+            <div class="product-description" data-id="2" data-name="HighJump2 Nike x ShoeShack" data-price="149.90">
+                <h3>PowerPeds x Velocity
+                </h3>
+                <p>Variant colors</p>
+                <p class="additional-info">Informação adicional sobre o Produto 8.</p>
+                <p class="price">R$ 119,99</p>
+                <button class="buy-button" onclick="addToCart(2)">Comprar</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./assets/meia 3.png" alt="Product 3">
+            <div class="product-description" data-id="3" data-name="SprintSolar1 Nike x ShoeShack" data-price="199.90">
+                <h3>DynamoDashes Plus Combo</h3>
+                <p>Blue and White</p>
+                <p class="additional-info">Informação adicional sobre o Produto 9.</p>
+                <p class="price">R$ 189,90</p>
+                <button class="buy-button" onclick="addToCart(3)">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
